@@ -1,0 +1,640 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>tunap. — Turnierleitung für Badminton-Vereine</title>
+  <meta name="description" content="tunap. ist die Windows-App für Badminton-Vereinsturniere: Auslosung, Spielplan, Live-Scoring nach BWF-Regeln und Ergebnisse — komplett lokal in deiner Halle. Kostenlos für Vereine." />
+  <meta name="theme-color" content="#faf6ee" />
+  <link rel="canonical" href="https://tunap.app/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="tunap." />
+  <meta property="og:title" content="tunap. — Turnierleitung für Badminton-Vereine" />
+  <meta property="og:description" content="Auslosung, Spielplan, Live-Scoring nach BWF-Regeln und Ergebnisse — in einer Windows-App, die komplett lokal in deiner Halle läuft. Kostenlos für Vereine." />
+  <meta property="og:image" content="assets/og-image.png" />
+  <meta property="og:image:alt" content="tunap. Court-Monitor mit Live-Punktestand eines Badminton-Doppels" />
+  <meta property="og:url" content="https://tunap.app/" />
+  <meta property="og:locale" content="de_DE" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="tunap. — Turnierleitung für Badminton-Vereine" />
+  <meta name="twitter:description" content="Auslosung, Spielplan, Live-Scoring nach BWF-Regeln und Ergebnisse — lokal in deiner Halle. Kostenlos für Vereine." />
+  <meta name="twitter:image" content="assets/og-image.png" />
+
+  <link rel="icon" type="image/svg+xml" href="assets/favicon-orange.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<!-- ============================== NAV ============================== -->
+<header class="nav">
+  <div class="container nav__inner">
+    <a class="brand" href="#top" aria-label="tunap. Startseite">
+      <span class="mark" style="width:26px;height:26px;font-size:16px;" aria-hidden="true">t<span>.</span></span>
+      <span class="wordmark" style="font-size:22px;">tunap<span class="dot">.</span></span>
+    </a>
+    <nav class="nav__links" aria-label="Hauptnavigation">
+      <a href="#funktionen">Funktionen</a>
+      <a href="#screens">Screens</a>
+      <a href="#vereine">Für Vereine</a>
+    </nav>
+    <div class="nav__actions">
+      <a class="btn btn--ghost" href="https://github.com/Flolli32/tunap" rel="noopener">
+        <svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+        GitHub
+      </a>
+      <a class="btn btn--primary" href="#download">
+        <svg viewBox="0 0 15 15" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7.5 2v8M4 7l3.5 3.5L11 7M2.5 13h10"/></svg>
+        <span class="label-full">Kostenlos laden</span>
+      </a>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- ============================== HERO ============================== -->
+  <section class="hero">
+    <div class="container hero__grid">
+      <div>
+        <p class="eyebrow">Turnierleitung für Badminton-Vereine</p>
+        <h1>Vereinsturniere,<br />souverän geleitet.</h1>
+        <p class="hero__sub">
+          Auslosung, Spielplan, Live-Scoring nach BWF-Regeln und Ergebnisse —
+          in einer Windows-App, die komplett lokal in deiner Halle läuft.
+        </p>
+        <div class="hero__cta">
+          <a class="btn btn--accent btn--lg" href="#download">
+            <svg viewBox="0 0 15 15" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7.5 2v8M4 7l3.5 3.5L11 7M2.5 13h10"/></svg>
+            Für Windows herunterladen
+          </a>
+          <a class="btn btn--ghost btn--lg" href="#screens">Screens ansehen</a>
+        </div>
+        <div class="hero__meta">
+          <span>Kostenlos für Vereine</span><span>·</span><span>Keine Cloud nötig</span><span>·</span><span>Windows 10 / 11</span>
+        </div>
+      </div>
+
+      <div class="hero__visual">
+        <div class="hero__court" aria-hidden="true">
+          <!-- court motif -->
+          <svg width="150" height="92" viewBox="0 0 150 92" fill="none" stroke="rgba(26,23,20,0.12)" stroke-width="1.4">
+            <rect x="8" y="8" width="134" height="76"/>
+            <line x1="22" y1="8" x2="22" y2="84"/><line x1="128" y1="8" x2="128" y2="84"/>
+            <line x1="41" y1="8" x2="41" y2="84"/><line x1="109" y1="8" x2="109" y2="84"/>
+            <line x1="8" y1="46" x2="41" y2="46"/><line x1="109" y1="46" x2="142" y2="46"/>
+            <line x1="75" y1="5" x2="75" y2="87" stroke="#fb923c" stroke-width="2.2" stroke-dasharray="3 3"/>
+          </svg>
+        </div>
+        <div class="hero__shot">
+          <!-- Dashboard screen -->
+          <div class="shot" data-h="576">
+            <div class="shot__scale"><div class="shot__inner" style="--design-w:600px;">
+              <!-- @include dashboard -->
+              <div class="app-frame" style="height:576px;">
+                <!-- RAIL -->
+                <nav class="rail" aria-hidden="true">
+                  <span class="app-mark" style="width:28px;height:28px;font-size:11.8px;">tnp<span class="dot">.</span></span>
+                  <span class="rail__back"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 6l-6 6 6 6"/></svg></span>
+                  <div class="rail__items">
+                    <span class="rail__btn is-active"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3h7v7H3zM14 3h7v7h-7zM3 14h7v7H3zM14 14h7v7h-7z"/></svg></span>
+                    <span class="rail__btn"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l9 5-9 5-9-5 9-5zM3 13l9 5 9-5"/></svg></span>
+                    <span class="rail__btn"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12l9-9 9 9-9 9-9-9zM8 8h.01"/></svg></span>
+                    <span class="rail__btn"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12l5 5L20 6"/></svg></span>
+                    <span class="rail__btn"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h7v7H4zM13 4h7v7h-7zM4 13h7v7H4zM13 13h7v7h-7z"/></svg></span>
+                    <span class="rail__btn"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h6v6M4 19h6v-6M10 8h5v8h5M10 16h5"/></svg></span>
+                    <span class="rail__btn"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 5h18v14H3zM12 5v14M3 12h18"/></svg></span>
+                    <span class="rail__btn"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11a3 3 0 100-6 3 3 0 000 6zM3 20a6 6 0 0112 0M17 11a3 3 0 100-6M15 20a6 6 0 016 0"/></svg></span>
+                    <span class="rail__btn"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M5 21V10M12 21V4M19 21v-7M3 21h18"/></svg></span>
+                  </div>
+                  <span class="rail__sun"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 8a4 4 0 100 8 4 4 0 000-8zM12 2v2M12 20v2M4 12H2M22 12h-2M5 5l1.5 1.5M17.5 17.5L19 19M19 5l-1.5 1.5M6.5 17.5L5 19"/></svg></span>
+                  <span class="rail__avatar">JM</span>
+                </nav>
+                <div class="app-frame__body">
+                  <div class="topbar">
+                    <div class="crumbs"><span class="c">Turniere</span><span class="sep">/</span><span class="c">Nordlicht-Cup</span><span class="sep">/</span><span class="c is-last">Dashboard</span></div>
+                    <div class="topbar__right">
+                      <div class="searchbar"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4-4"/></svg><span>Suche Spieler, Match, Turnier…</span><kbd>⌘K</kbd></div>
+                    </div>
+                  </div>
+                  <div class="screen-head">
+                    <div>
+                      <div class="screen-head__eyebrow">Übersicht</div>
+                      <h3>Dashboard</h3>
+                      <div class="screen-head__meta"><span class="m"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-5-7-11a7 7 0 0114 0c0 6-7 11-7 11z"/></svg>Nordlicht-Cup</span></div>
+                    </div>
+                    <div class="screen-head__right"><span class="btn-soft">Layout bearbeiten</span></div>
+                  </div>
+                  <div class="screen-body">
+                    <div class="panel statusbar">
+                      <div class="statusbar__title panel-label"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 21V10M12 21V4M19 21v-7"/></svg>Statusleiste</div>
+                      <div class="statcols">
+                        <div class="statcol">
+                          <div class="statcol__label">FORTSCHRITT</div>
+                          <div class="statcol__top"><span style="font-size:14px;font-weight:600;">Läuft</span><span style="font-size:14px;font-weight:700;">73 %</span></div>
+                          <div class="bar"><span style="width:73%;"></span></div>
+                          <div class="statcol__sub">98 von 135 Matches · 6 laufen</div>
+                        </div>
+                        <div class="statcol">
+                          <div class="statcol__label">CHECK-IN</div>
+                          <div class="statcol__top" style="gap:4px;justify-content:flex-start;"><span class="statcol__big">148</span><span style="font-size:13px;color:var(--app-faint);">/ 148</span><span style="margin-left:auto;font-size:14px;font-weight:700;color:#2f9e5f;">100 %</span></div>
+                          <div class="bar"><span style="width:100%;background:#2f9e5f;"></span></div>
+                          <div class="statcol__sub">0 ausstehend</div>
+                        </div>
+                        <div class="statcol">
+                          <div class="statcol__label">ZAHLUNGEN</div>
+                          <div class="statcol__top" style="gap:4px;justify-content:flex-start;"><span class="statcol__big">0</span><span style="font-size:13px;color:var(--app-faint);">/ 148</span><span style="margin-left:auto;font-size:14px;font-weight:700;color:var(--app-faint);">0 %</span></div>
+                          <div class="bar"><span style="width:2%;background:var(--app-faint);"></span></div>
+                          <div class="statcol__sub">148 offen</div>
+                        </div>
+                        <div class="statcol">
+                          <div class="statcol__label">TURNIER-STEUERUNG</div>
+                          <div class="ctrl-row"><span class="ctrl-primary">✓ Abschließen</span><span class="ctrl-ghost">Abbrechen</span></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="panel" style="padding:16px 18px;">
+                      <div class="fields-head"><span class="panel-label"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 5h18v14H3zM12 5v14M3 12h18"/></svg>Live-Felder</span><span class="open">Öffnen →</span></div>
+                      <div class="field-grid">
+                        <!-- field 1 -->
+                        <div class="card field-card">
+                          <div class="field-card__head"><span class="field-card__no">FELD 1</span><span class="disc-badge a sm">HD A</span><span class="match-pill sm">MATCH 104</span><span class="status status--laeuft sm">Läuft</span></div>
+                          <div class="pair win"><span class="pair__serve"></span><span class="pair__clubs"><span class="club tus">TU</span><span class="club vfl">VF</span></span><span class="pair__names">M. Dohrmann <span class="slash">/</span> P. Saßen</span><span class="pair__scores"><span class="w">21</span><span>12</span><span class="w">4</span></span></div>
+                          <div class="pair top"><span class="pair__serve"></span><span class="pair__clubs"><span class="club svh">SV</span><span class="club mtk">MT</span></span><span class="pair__names">J. Bauhaus <span class="slash">/</span> O. Tjaden</span><span class="pair__scores"><span>11</span><span class="w">21</span><span>0</span></span></div>
+                          <div class="field-card__foot"><span class="field-card__round">Quarter final · Feld 1</span><span class="timer">42:10</span></div>
+                        </div>
+                        <!-- field 2 -->
+                        <div class="card field-card">
+                          <div class="field-card__head"><span class="field-card__no">FELD 2</span><span class="disc-badge b sm">HD B</span><span class="match-pill sm">MATCH 98</span><span class="status status--einspielen sm">Einspielen</span></div>
+                          <div class="pair"><span class="pair__serve"></span><span class="pair__clubs"><span class="club scm">SC</span><span class="club bca">BC</span></span><span class="pair__names">J. Bellmann <span class="slash">/</span> K. Wieland</span></div>
+                          <div class="pair top"><span class="pair__serve"></span><span class="pair__clubs"><span class="club otb">OT</span><span class="club tvf">TV</span></span><span class="pair__names">E. Burfeind <span class="slash">/</span> I. Westhoff</span></div>
+                          <div class="field-card__foot"><span class="field-card__round">Round of 16 · Feld 2</span></div>
+                        </div>
+                        <!-- field 3 -->
+                        <div class="card field-card">
+                          <div class="field-card__head"><span class="field-card__no">FELD 3</span><span class="disc-badge a sm">HD A</span><span class="match-pill sm">MATCH 103</span><span class="status status--einspielen sm">Einspielen</span></div>
+                          <div class="pair"><span class="pair__serve"></span><span class="pair__clubs"><span class="club bca">BC</span><span class="club bca">BC</span></span><span class="pair__names">R. Nolden <span class="slash">/</span> S. Kühl</span></div>
+                          <div class="pair top"><span class="pair__serve"></span><span class="pair__clubs"><span class="club otb">OT</span><span class="club tvf">TV</span></span><span class="pair__names">F. Reeker <span class="slash">/</span> T. Quandt</span></div>
+                          <div class="field-card__foot"><span class="field-card__round">Quarter final · Feld 3</span></div>
+                        </div>
+                        <!-- field 4 -->
+                        <div class="card field-card">
+                          <div class="field-card__head"><span class="field-card__no">FELD 4</span><span class="disc-badge a sm">HD A</span><span class="match-pill sm">MATCH 105</span><span class="status status--einspielen sm">Einspielen</span></div>
+                          <div class="pair"><span class="pair__serve"></span><span class="pair__clubs"><span class="club scm">SC</span><span class="club bca">BC</span></span><span class="pair__names">L. Hagedorn <span class="slash">/</span> N. Briese</span></div>
+                          <div class="pair top"><span class="pair__serve"></span><span class="pair__clubs"><span class="club tus">TU</span><span class="club svh">SV</span></span><span class="pair__names">C. Wahl <span class="slash">/</span> G. Stentzel</span></div>
+                          <div class="field-card__foot"><span class="field-card__round">Quarter final · Feld 4</span></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================== TRUST ============================== -->
+  <section class="trust">
+    <div class="container">
+      <div class="trust__strip">
+        <div class="trust__item"><span class="trust__dot"></span><div><div class="trust__t">BWF-regelkonform</div><div class="trust__s">Zählung nach Verbandsregeln</div></div></div>
+        <div class="trust__item"><span class="trust__dot"></span><div><div class="trust__t">100 % lokal</div><div class="trust__s">Läuft offline in der Halle</div></div></div>
+        <div class="trust__item"><span class="trust__dot"></span><div><div class="trust__t">Multi-Client</div><div class="trust__s">Admin · Monitor · Tablet · Public</div></div></div>
+        <div class="trust__item"><span class="trust__dot"></span><div><div class="trust__t">Kostenlos</div><div class="trust__s">Frei für Vereine</div></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================== PROBLEM / LÖSUNG ============================== -->
+  <section class="compare" id="vereine">
+    <div class="container compare__grid">
+      <div class="compare__card compare__card--bad">
+        <div class="compare__kicker">Ohne Tool</div>
+        <h3>Turnierorga von Hand nervt.</h3>
+        <div class="compare__row compare__row--bad"><span class="compare__box-empty"></span><span>Auslosung in Excel, Bracket auf Flipchart</span></div>
+        <div class="compare__row compare__row--bad"><span class="compare__box-empty"></span><span>Spielzettel quer durch die Halle tragen</span></div>
+        <div class="compare__row compare__row--bad"><span class="compare__box-empty"></span><span>Ergebnisse abends mühsam abtippen</span></div>
+        <div class="compare__row compare__row--bad"><span class="compare__box-empty"></span><span>Zuschauer fragen ständig: „Wer spielt wann?“</span></div>
+      </div>
+      <div class="compare__card compare__card--good">
+        <div class="compare__kicker">Mit tunap.</div>
+        <h3>Ein System, das mitläuft.</h3>
+        <div class="compare__row compare__row--good"><span class="compare__check"><svg width="11" height="11" viewBox="0 0 12 12" fill="none" stroke="#1a1714" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M2.5 6.5l2.5 2.5 4.5-5"/></svg></span><span>Auslosung &amp; Bracket auf Knopfdruck</span></div>
+        <div class="compare__row compare__row--good"><span class="compare__check"><svg width="11" height="11" viewBox="0 0 12 12" fill="none" stroke="#1a1714" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M2.5 6.5l2.5 2.5 4.5-5"/></svg></span><span>Matches automatisch auf freie Felder verteilt</span></div>
+        <div class="compare__row compare__row--good"><span class="compare__check"><svg width="11" height="11" viewBox="0 0 12 12" fill="none" stroke="#1a1714" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M2.5 6.5l2.5 2.5 4.5-5"/></svg></span><span>Schiri tippt am Tablet — Ergebnis ist sofort da</span></div>
+        <div class="compare__row compare__row--good"><span class="compare__check"><svg width="11" height="11" viewBox="0 0 12 12" fill="none" stroke="#1a1714" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M2.5 6.5l2.5 2.5 4.5-5"/></svg></span><span>Public-View &amp; Monitor zeigen alles in Echtzeit</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================== FEATURES ============================== -->
+  <section class="features" id="funktionen">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">Ein Turnier, vier Werkzeuge</p>
+        <h2>Jeder Screen, den du am Turniertag brauchst.</h2>
+      </div>
+
+      <!-- 01 Auslosung / Bracket -->
+      <div class="feature">
+        <div class="feature__text">
+          <div class="feature__tag"><span class="feature__n">01</span><span class="feature__line"></span><span class="feature__eyebrow">Auslosung</span></div>
+          <h3>Gruppen &amp; Bracket auf Knopfdruck</h3>
+          <p class="feature__body">Setzungen rein, fertig: tunap. baut Gruppen und KO-Bracket für alle Disziplinen automatisch — jeder Sieger rückt eine Runde weiter.</p>
+          <ul class="bullets">
+            <li><span class="tick"><svg width="11" height="11" viewBox="0 0 12 12" fill="none" stroke="#fb923c" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M2.5 6.5l2.5 2.5 4.5-5"/></svg></span><span>Gruppen- und KO-Phase pro Klasse</span></li>
+            <li><span class="tick"><svg width="11" height="11" viewBox="0 0 12 12" fill="none" stroke="#fb923c" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M2.5 6.5l2.5 2.5 4.5-5"/></svg></span><span>Alle Disziplinen: HD, DD, HE, DE, MX</span></li>
+            <li><span class="tick"><svg width="11" height="11" viewBox="0 0 12 12" fill="none" stroke="#fb923c" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M2.5 6.5l2.5 2.5 4.5-5"/></svg></span><span>Automatischer Bracket-Fortschritt</span></li>
+          </ul>
+        </div>
+        <div class="feature__view">
+          <div class="shot" data-h="534">
+            <div class="shot__scale"><div class="shot__inner" style="--design-w:880px;">
+              <div class="app-frame" style="height:534px;">
+                <nav class="rail" aria-hidden="true">
+                  <span class="app-mark" style="width:28px;height:28px;font-size:11.8px;">tnp<span class="dot">.</span></span>
+                  <span class="rail__back"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 6l-6 6 6 6"/></svg></span>
+                  <div class="rail__items">
+                    <span class="rail__btn"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3h7v7H3zM14 3h7v7h-7zM3 14h7v7H3zM14 14h7v7h-7z"/></svg></span>
+                    <span class="rail__btn"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l9 5-9 5-9-5 9-5zM3 13l9 5 9-5"/></svg></span>
+                    <span class="rail__btn"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12l9-9 9 9-9 9-9-9zM8 8h.01"/></svg></span>
+                    <span class="rail__btn"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12l5 5L20 6"/></svg></span>
+                    <span class="rail__btn"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h7v7H4zM13 4h7v7h-7zM4 13h7v7H4zM13 13h7v7h-7z"/></svg></span>
+                    <span class="rail__btn is-active"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h6v6M4 19h6v-6M10 8h5v8h5M10 16h5"/></svg></span>
+                    <span class="rail__btn"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 5h18v14H3zM12 5v14M3 12h18"/></svg></span>
+                    <span class="rail__btn"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11a3 3 0 100-6 3 3 0 000 6zM3 20a6 6 0 0112 0M17 11a3 3 0 100-6M15 20a6 6 0 016 0"/></svg></span>
+                    <span class="rail__btn"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M5 21V10M12 21V4M19 21v-7M3 21h18"/></svg></span>
+                  </div>
+                  <span class="rail__sun"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 8a4 4 0 100 8 4 4 0 000-8zM12 2v2M12 20v2M4 12H2M22 12h-2M5 5l1.5 1.5M17.5 17.5L19 19M19 5l-1.5 1.5M6.5 17.5L5 19"/></svg></span>
+                  <span class="rail__avatar">JM</span>
+                </nav>
+                <div class="app-frame__body">
+                  <div class="topbar">
+                    <div class="crumbs"><span class="c">Turniere</span><span class="sep">/</span><span class="c">Nordlicht-Cup</span><span class="sep">/</span><span class="c is-last">Bracket</span></div>
+                    <div class="topbar__right"><div class="searchbar"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4-4"/></svg><span>Suche Spieler, Match, Turnier…</span><kbd>⌘K</kbd></div></div>
+                  </div>
+                  <div class="screen-head">
+                    <div><div class="screen-head__eyebrow">Live</div><h3>Bracket</h3>
+                      <div class="screen-head__meta"><span class="m"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h6v6M10 8h5v8h5"/></svg>8 KO-Matches</span><span class="m"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12l5 5L20 6"/></svg>0 beendet</span></div>
+                    </div>
+                  </div>
+                  <div class="screen-body">
+                    <div class="tabs"><span class="tab on"><span class="tab__badge hd">HD</span>Herren-Doppel</span><span class="tab"><span class="tab__badge dd">DD</span>Damen-Doppel</span></div>
+                    <div class="subtabs" style="padding:12px 0 4px;"><span class="on">A</span><span>B</span><span>C</span></div>
+                    <div class="bracket-rounds"><span class="title">Hauptrunde</span><span class="count">7 Matches</span></div>
+                    <div class="bracket">
+                      <div class="bracket__col">
+                        <div class="col-head">VIERTELFINALE</div>
+                        <div class="bracket__stack">
+                          <div class="bcard"><div class="bcard__head"><span class="bcard__id">#103</span><span class="bcard__field">· Feld 3</span><span class="status status--einspielen sm">Einspielen</span></div><div class="bcard__body"><div class="pair"><span class="pair__clubs"><span class="club bca">BC</span><span class="club bca">BC</span></span><span class="pair__names">R. Nolden <span class="slash">/</span> S. Kühl</span></div><div class="pair top"><span class="pair__clubs"><span class="club otb">OT</span><span class="club tvf">TV</span></span><span class="pair__names">F. Reeker <span class="slash">/</span> T. Quandt</span></div></div></div>
+                          <div class="bcard live"><div class="bcard__head"><span class="bcard__id">#104</span><span class="bcard__field">· Feld 1</span><span class="status status--laeuft sm">Läuft</span></div><div class="bcard__body"><div class="pair"><span class="pair__clubs"><span class="club tus">TU</span><span class="club vfl">VF</span></span><span class="pair__names">M. Dohrmann <span class="slash">/</span> P. Saßen</span></div><div class="pair top"><span class="pair__clubs"><span class="club svh">SV</span><span class="club mtk">MT</span></span><span class="pair__names">J. Bauhaus <span class="slash">/</span> O. Tjaden</span></div></div></div>
+                          <div class="bcard"><div class="bcard__head"><span class="bcard__id">#105</span><span class="bcard__field">· Feld 4</span><span class="status status--einspielen sm">Einspielen</span></div><div class="bcard__body"><div class="pair"><span class="pair__clubs"><span class="club scm">SC</span><span class="club bca">BC</span></span><span class="pair__names">L. Hagedorn <span class="slash">/</span> N. Briese</span></div><div class="pair top"><span class="pair__clubs"><span class="club tus">TU</span><span class="club svh">SV</span></span><span class="pair__names">C. Wahl <span class="slash">/</span> G. Stentzel</span></div></div></div>
+                          <div class="bcard"><div class="bcard__head"><span class="bcard__id">#106</span><span class="bcard__field">· Feld 5</span><span class="status status--einspielen sm">Einspielen</span></div><div class="bcard__body"><div class="pair"><span class="pair__clubs"><span class="club mtk">MT</span><span class="club tvf">TV</span></span><span class="pair__names">A. Karim <span class="slash">/</span> P. Schuler</span></div><div class="pair top"><span class="pair__clubs"><span class="club otb">OT</span><span class="club vfl">VF</span></span><span class="pair__names">P. Kort <span class="slash">/</span> D. Pinto</span></div></div></div>
+                        </div>
+                      </div>
+                      <div class="connector"><div></div><div></div></div>
+                      <div class="bracket__col center">
+                        <div class="col-head">HALBFINALE</div>
+                        <div class="bracket__stack spread">
+                          <div class="bcard"><div class="bcard__head"><span class="bcard__id">#115</span><span class="status status--geplant sm">Geplant</span></div><div class="bcard__body"><div class="bcard__future">Sieger VF1</div><div class="bcard__future">Sieger VF2</div></div></div>
+                          <div class="bcard"><div class="bcard__head"><span class="bcard__id">#116</span><span class="status status--geplant sm">Geplant</span></div><div class="bcard__body"><div class="bcard__future">Sieger VF3</div><div class="bcard__future">Sieger VF4</div></div></div>
+                        </div>
+                      </div>
+                      <div class="connector single"><div></div></div>
+                      <div class="bracket__col" style="justify-content:center;">
+                        <div class="col-head">FINALE</div>
+                        <div class="bcard"><div class="bcard__head"><span class="bcard__id">#130</span><span class="status status--geplant sm">Geplant</span></div><div class="bcard__body"><div class="bcard__future">Sieger HF1</div><div class="bcard__future">Sieger HF2</div></div></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 02 Spielplan -->
+      <div class="feature feature--flip">
+        <div class="feature__text">
+          <div class="feature__tag"><span class="feature__n">02</span><span class="feature__line"></span><span class="feature__eyebrow">Spielplan</span></div>
+          <h3>Matches finden ihr Feld von selbst</h3>
+          <p class="feature__body">Der Scheduler legt Partien auf freie Felder und hält die Pipeline voll. Filtere nach Status, Klasse oder Runde — in Liste, Raster oder Kompakt.</p>
+          <ul class="bullets">
+            <li><span class="tick"><svg width="11" height="11" viewBox="0 0 12 12" fill="none" stroke="#fb923c" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M2.5 6.5l2.5 2.5 4.5-5"/></svg></span><span>Automatische Feldverteilung</span></li>
+            <li><span class="tick"><svg width="11" height="11" viewBox="0 0 12 12" fill="none" stroke="#fb923c" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M2.5 6.5l2.5 2.5 4.5-5"/></svg></span><span>Status live: Einspielen, läuft, beendet</span></li>
+            <li><span class="tick"><svg width="11" height="11" viewBox="0 0 12 12" fill="none" stroke="#fb923c" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M2.5 6.5l2.5 2.5 4.5-5"/></svg></span><span>Drei Ansichten, ein Klick</span></li>
+          </ul>
+        </div>
+        <div class="feature__view">
+          <div class="shot" data-h="534">
+            <div class="shot__scale"><div class="shot__inner" style="--design-w:760px;">
+              <div class="app-frame" style="height:534px;">
+                <nav class="rail" aria-hidden="true">
+                  <span class="app-mark" style="width:28px;height:28px;font-size:11.8px;">tnp<span class="dot">.</span></span>
+                  <span class="rail__back"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 6l-6 6 6 6"/></svg></span>
+                  <div class="rail__items">
+                    <span class="rail__btn"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3h7v7H3zM14 3h7v7h-7zM3 14h7v7H3zM14 14h7v7h-7z"/></svg></span>
+                    <span class="rail__btn"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l9 5-9 5-9-5 9-5zM3 13l9 5 9-5"/></svg></span>
+                    <span class="rail__btn"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12l9-9 9 9-9 9-9-9zM8 8h.01"/></svg></span>
+                    <span class="rail__btn"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12l5 5L20 6"/></svg></span>
+                    <span class="rail__btn"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h7v7H4zM13 4h7v7h-7zM4 13h7v7H4zM13 13h7v7h-7z"/></svg></span>
+                    <span class="rail__btn"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h6v6M4 19h6v-6M10 8h5v8h5M10 16h5"/></svg></span>
+                    <span class="rail__btn is-active"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 5h18v14H3zM12 5v14M3 12h18"/></svg></span>
+                    <span class="rail__btn"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11a3 3 0 100-6 3 3 0 000 6zM3 20a6 6 0 0112 0M17 11a3 3 0 100-6M15 20a6 6 0 016 0"/></svg></span>
+                    <span class="rail__btn"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M5 21V10M12 21V4M19 21v-7M3 21h18"/></svg></span>
+                  </div>
+                  <span class="rail__sun"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 8a4 4 0 100 8 4 4 0 000-8zM12 2v2M12 20v2M4 12H2M22 12h-2M5 5l1.5 1.5M17.5 17.5L19 19M19 5l-1.5 1.5M6.5 17.5L5 19"/></svg></span>
+                  <span class="rail__avatar">JM</span>
+                </nav>
+                <div class="app-frame__body">
+                  <div class="topbar">
+                    <div class="crumbs"><span class="c">Turniere</span><span class="sep">/</span><span class="c">Nordlicht-Cup</span><span class="sep">/</span><span class="c is-last">Spielplan</span></div>
+                    <div class="topbar__right">
+                      <span class="viewswitch"><span>Liste</span><span>Raster</span><span class="on">Kompakt</span></span>
+                    </div>
+                  </div>
+                  <div class="screen-head">
+                    <div><div class="screen-head__eyebrow">Live</div><h3>Spielplan</h3>
+                      <div class="screen-head__meta"><span class="m"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 5h18v14H3zM3 10h18"/></svg>135 Matches</span><span style="color:#cf7d18;">6 laufen</span><span class="m"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12l5 5L20 6"/></svg>98 beendet</span><span>27 geplant</span></div>
+                    </div>
+                  </div>
+                  <div class="screen-body">
+                    <div class="filters">
+                      <span class="filter"><span class="lbl">Disziplin:</span><span class="val">Alle</span><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M6 9l6 6 6-6"/></svg></span>
+                      <span class="filter"><span class="lbl">Klasse:</span><span class="val">Alle</span><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M6 9l6 6 6-6"/></svg></span>
+                      <span class="filter is-active"><span class="lbl">Status:</span><span class="val">3 ausgewählt</span><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M6 9l6 6 6-6"/></svg></span>
+                      <span class="filter"><span class="lbl">Gruppe:</span><span class="val">Alle</span><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M6 9l6 6 6-6"/></svg></span>
+                      <span class="filter"><span class="lbl">Runde:</span><span class="val">Alle</span><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M6 9l6 6 6-6"/></svg></span>
+                    </div>
+                    <div class="list-meta"><span class="left">Zeige 36 von 135 Spielen</span><span class="right">Sortiert nach: <strong style="font-weight:600;">Match-Nummer</strong></span></div>
+                    <div class="match-grid">
+                      <div class="card match-card b"><div class="match-card__head"><span class="disc-badge b sm">HD B</span><span class="match-pill sm">MATCH 97</span><span class="status status--vorbereitung sm">In Vorbereitung</span></div><div class="pair"><span class="pair__clubs"><span class="club scm">SC</span><span class="club bca">BC</span></span><span class="pair__names">S. Schellhorn <span class="slash">/</span> K. Schümann</span></div><div class="pair top"><span class="pair__clubs"><span class="club otb">OT</span><span class="club tvf">TV</span></span><span class="pair__names">K. Gellen <span class="slash">/</span> D. Wiebel</span></div><div class="match-card__foot"><span class="match-card__round">Round of 16</span></div></div>
+                      <div class="card match-card b"><div class="match-card__head"><span class="disc-badge b sm">HD B</span><span class="match-pill sm">MATCH 98</span><span class="status status--einspielen sm">Einspielen</span></div><div class="pair"><span class="pair__clubs"><span class="club scm">SC</span><span class="club bca">BC</span></span><span class="pair__names">J. Bellmann <span class="slash">/</span> K. Wieland</span></div><div class="pair top"><span class="pair__clubs"><span class="club otb">OT</span><span class="club tvf">TV</span></span><span class="pair__names">E. Burfeind <span class="slash">/</span> I. Westhoff</span></div><div class="match-card__foot"><span class="match-card__round">Round of 16 · Feld 2</span><span class="timer-plain">⏱ 14:03</span></div></div>
+                      <div class="card match-card b"><div class="match-card__head"><span class="disc-badge b sm">HD B</span><span class="match-pill sm">MATCH 99</span><span class="status status--einspielen sm">Einspielen</span></div><div class="pair"><span class="pair__clubs"><span class="club mtk">MT</span><span class="club svh">SV</span></span><span class="pair__names">Z. Kho <span class="slash">/</span> L. Ravinder</span></div><div class="pair top"><span class="pair__clubs"><span class="club tvf">TV</span><span class="club mtk">MT</span></span><span class="pair__names">D. Becker <span class="slash">/</span> M. Röhr</span></div><div class="match-card__foot"><span class="match-card__round">Round of 16 · Feld 6</span><span class="timer-plain">⏱ 14:00</span></div></div>
+                      <div class="card match-card c"><div class="match-card__head"><span class="disc-badge c sm">HD C</span><span class="match-pill sm">MATCH 101</span><span class="status status--vorbereitung sm">In Vorbereitung</span></div><div class="pair"><span class="pair__clubs"><span class="club tus">TU</span><span class="club vfl">VF</span></span><span class="pair__names">T. Kochs <span class="slash">/</span> L. Kropf</span></div><div class="pair top"><span class="pair__clubs"><span class="club svh">SV</span><span class="club otb">OT</span></span><span class="pair__names">F. Cordes <span class="slash">/</span> F. Rennwanz</span></div><div class="match-card__foot"><span class="match-card__round">Round of 16</span><span class="status status--bereit sm">bereit</span></div></div>
+                      <div class="card match-card c"><div class="match-card__head"><span class="disc-badge c sm">HD C</span><span class="match-pill sm">MATCH 102</span><span class="status status--vorbereitung sm">In Vorbereitung</span></div><div class="pair"><span class="pair__clubs"><span class="club bca">BC</span><span class="club scm">SC</span></span><span class="pair__names">D. Klabes <span class="slash">/</span> N. Overbeck</span></div><div class="pair top"><span class="pair__clubs"><span class="club tvf">TV</span><span class="club mtk">MT</span></span><span class="pair__names">E. Mittel <span class="slash">/</span> M. Rohlf</span></div><div class="match-card__foot"><span class="match-card__round">Round of 16</span></div></div>
+                      <div class="card match-card a"><div class="match-card__head"><span class="disc-badge a sm">HD A</span><span class="match-pill sm">MATCH 103</span><span class="status status--einspielen sm">Einspielen</span></div><div class="pair"><span class="pair__clubs"><span class="club bca">BC</span><span class="club bca">BC</span></span><span class="pair__names">R. Nolden <span class="slash">/</span> S. Kühl</span></div><div class="pair top"><span class="pair__clubs"><span class="club otb">OT</span><span class="club tvf">TV</span></span><span class="pair__names">F. Reeker <span class="slash">/</span> T. Quandt</span></div><div class="match-card__foot"><span class="match-card__round">Quarter final · Feld 3</span><span class="timer-plain">⏱ 59:25</span></div></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 03 Live-Scoring / Court Monitor (dark) -->
+      <div class="feature">
+        <div class="feature__text">
+          <div class="feature__tag"><span class="feature__n">03</span><span class="feature__line"></span><span class="feature__eyebrow">Live-Scoring</span></div>
+          <h3>Der Schiri tippt, alle sehen zu</h3>
+          <p class="feature__body">Am Court-Tablet wird nach BWF-Regeln gezählt — 21 Punkte, zwei Vorsprung, Cap bei 30. Aufschlagfeld, Seitenwechsel und Sätze laufen automatisch mit.</p>
+          <ul class="bullets">
+            <li><span class="tick"><svg width="11" height="11" viewBox="0 0 12 12" fill="none" stroke="#fb923c" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M2.5 6.5l2.5 2.5 4.5-5"/></svg></span><span>BWF-Zählung mit Aufschlag-Logik</span></li>
+            <li><span class="tick"><svg width="11" height="11" viewBox="0 0 12 12" fill="none" stroke="#fb923c" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M2.5 6.5l2.5 2.5 4.5-5"/></svg></span><span>Court-Monitor zeigt Stellung &amp; Stand</span></li>
+            <li><span class="tick"><svg width="11" height="11" viewBox="0 0 12 12" fill="none" stroke="#fb923c" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M2.5 6.5l2.5 2.5 4.5-5"/></svg></span><span>Punkt-zurück und Feld drehen integriert</span></li>
+          </ul>
+        </div>
+        <div class="feature__view">
+          <img class="screenshot screenshot--dark" src="assets/control-tablet.png" width="2036" height="1153"
+            loading="lazy" decoding="async"
+            alt="tunap. Control-Tablet: Live-Scoring eines Herren-Doppels mit Spielständen, Satzübersicht und Spielerpositionen auf dem Court" />
+        </div>
+      </div>
+
+      <!-- 04 Ergebnisse / Gruppen -->
+      <div class="feature feature--flip">
+        <div class="feature__text">
+          <div class="feature__tag"><span class="feature__n">04</span><span class="feature__line"></span><span class="feature__eyebrow">Ergebnisse</span></div>
+          <h3>Tabellen, die sich selbst rechnen</h3>
+          <p class="feature__body">Sätze, Punktedifferenz und Platzierungen aktualisieren sich nach jedem Match. Qualifikanten stehen sofort fest — ohne eine einzige Formel.</p>
+          <ul class="bullets">
+            <li><span class="tick"><svg width="11" height="11" viewBox="0 0 12 12" fill="none" stroke="#fb923c" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M2.5 6.5l2.5 2.5 4.5-5"/></svg></span><span>Live-Standings je Gruppe</span></li>
+            <li><span class="tick"><svg width="11" height="11" viewBox="0 0 12 12" fill="none" stroke="#fb923c" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M2.5 6.5l2.5 2.5 4.5-5"/></svg></span><span>Qualifikanten automatisch markiert</span></li>
+            <li><span class="tick"><svg width="11" height="11" viewBox="0 0 12 12" fill="none" stroke="#fb923c" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M2.5 6.5l2.5 2.5 4.5-5"/></svg></span><span>Export für Urkunden &amp; Archiv</span></li>
+          </ul>
+        </div>
+        <div class="feature__view">
+          <div class="shot" data-h="500">
+            <div class="shot__scale"><div class="shot__inner" style="--design-w:640px;">
+              <div class="app-frame" style="height:500px;">
+                <nav class="rail" aria-hidden="true">
+                  <span class="app-mark" style="width:28px;height:28px;font-size:11.8px;">tnp<span class="dot">.</span></span>
+                  <span class="rail__back"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 6l-6 6 6 6"/></svg></span>
+                  <div class="rail__items">
+                    <span class="rail__btn"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3h7v7H3zM14 3h7v7h-7zM3 14h7v7H3zM14 14h7v7h-7z"/></svg></span>
+                    <span class="rail__btn"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l9 5-9 5-9-5 9-5zM3 13l9 5 9-5"/></svg></span>
+                    <span class="rail__btn"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12l9-9 9 9-9 9-9-9zM8 8h.01"/></svg></span>
+                    <span class="rail__btn"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12l5 5L20 6"/></svg></span>
+                    <span class="rail__btn is-active"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h7v7H4zM13 4h7v7h-7zM4 13h7v7H4zM13 13h7v7h-7z"/></svg></span>
+                    <span class="rail__btn"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h6v6M4 19h6v-6M10 8h5v8h5M10 16h5"/></svg></span>
+                    <span class="rail__btn"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 5h18v14H3zM12 5v14M3 12h18"/></svg></span>
+                    <span class="rail__btn"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11a3 3 0 100-6 3 3 0 000 6zM3 20a6 6 0 0112 0M17 11a3 3 0 100-6M15 20a6 6 0 016 0"/></svg></span>
+                    <span class="rail__btn"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M5 21V10M12 21V4M19 21v-7M3 21h18"/></svg></span>
+                  </div>
+                  <span class="rail__sun"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 8a4 4 0 100 8 4 4 0 000-8zM12 2v2M12 20v2M4 12H2M22 12h-2M5 5l1.5 1.5M17.5 17.5L19 19M19 5l-1.5 1.5M6.5 17.5L5 19"/></svg></span>
+                  <span class="rail__avatar">JM</span>
+                </nav>
+                <div class="app-frame__body">
+                  <div class="topbar">
+                    <div class="crumbs"><span class="c">Turniere</span><span class="sep">/</span><span class="c">Nordlicht-Cup</span><span class="sep">/</span><span class="c is-last">Gruppen</span></div>
+                    <div class="topbar__right"><div class="searchbar"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4-4"/></svg><span>Suche Spieler, Match, Turnier…</span><kbd>⌘K</kbd></div></div>
+                  </div>
+                  <div class="screen-head">
+                    <div><div class="screen-head__eyebrow">Live</div><h3>Gruppen</h3>
+                      <div class="screen-head__meta"><span class="m"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h7v7H4zM13 4h7v7h-7z"/></svg>4 Gruppen</span><span class="m"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 5h18v14H3zM3 10h18"/></svg>15 Matches</span></div>
+                    </div>
+                  </div>
+                  <div class="screen-body">
+                    <div class="tabs" style="margin-bottom:14px;"><span class="tab on"><span class="tab__badge hd">HD</span>Herren-Doppel</span><span class="tab"><span class="tab__badge dd">DD</span>Damen-Doppel</span></div>
+                    <div class="toolbar-row"><div class="subtabs"><span class="on">A</span><span>B</span><span>C</span></div><span class="swap">⇄ Notfall-Tausch</span></div>
+                    <div class="groups">
+                      <div class="card group open">
+                        <div class="group__head"><span class="group__chevron"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M9 6l6 6-6 6"/></svg></span><span class="group__name">Gruppe A</span><span class="group__teams">· 4 Teams</span><span class="group__prog"><span class="frac">6/6</span><span class="track"><span style="width:100%;"></span></span></span></div>
+                        <div class="standings">
+                          <div class="standings__head"><span>#</span><span>TEAM</span><span class="c">SP</span><span class="c">SÄTZE</span><span class="r">DIFF</span></div>
+                          <div class="standings__row q"><span class="rank">1</span><span class="team"><span class="club tus">TU</span><span class="club vfl">VF</span><span class="nm">M. Dohrmann <span class="slash">/</span> P. Saßen</span></span><span class="sp">3</span><span class="sets">6:0</span><span class="diff">+38</span></div>
+                          <div class="standings__row q"><span class="rank">2</span><span class="team"><span class="club otb">OT</span><span class="club tvf">TV</span><span class="nm">F. Reeker <span class="slash">/</span> T. Quandt</span></span><span class="sp">3</span><span class="sets">4:2</span><span class="diff">+12</span></div>
+                          <div class="standings__row"><span class="rank">3</span><span class="team"><span class="club bca">BC</span><span class="club bca">BC</span><span class="nm">R. Nolden <span class="slash">/</span> S. Kühl</span></span><span class="sp">3</span><span class="sets">2:4</span><span class="diff">−9</span></div>
+                          <div class="standings__row"><span class="rank">4</span><span class="team"><span class="club scm">SC</span><span class="club bca">BC</span><span class="nm">L. Hagedorn <span class="slash">/</span> N. Briese</span></span><span class="sp">3</span><span class="sets">0:6</span><span class="diff">−41</span></div>
+                        </div>
+                      </div>
+                      <div class="card group"><div class="group__head"><span class="group__chevron"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M9 6l6 6-6 6"/></svg></span><span class="group__name">Gruppe B</span><span class="group__teams">· 3 Teams</span><span class="group__prog"><span class="frac">3/3</span><span class="track"><span style="width:100%;"></span></span></span></div></div>
+                      <div class="card group"><div class="group__head"><span class="group__chevron"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M9 6l6 6-6 6"/></svg></span><span class="group__name">Gruppe C</span><span class="group__teams">· 3 Teams</span><span class="group__prog"><span class="frac">3/3</span><span class="track"><span style="width:100%;"></span></span></span></div></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================== SHOWCASE ============================== -->
+  <section class="showcase" id="screens">
+    <div class="container">
+      <div class="showcase__head">
+        <div>
+          <p class="eyebrow">Vom Tablet an die Hallenwand</p>
+          <h2>Der Punktestand, groß für alle.</h2>
+        </div>
+        <p>Was am Court-Tablet getippt wird, steht eine Sekunde später auf dem Public-Viewer — für Zuschauer, Beamer oder den großen Monitor im Foyer.</p>
+      </div>
+
+      <!-- Public Scoreboard (full width) -->
+      <div class="shot" data-h="296">
+        <div class="shot__scale"><div class="shot__inner" style="--design-w:1180px;">
+          <div class="scoreboard" style="height:296px;">
+            <div class="scoreboard__top"><span class="field">Feld 1</span><span class="mid">HD A · Quarter final</span><span class="clock">42:57</span></div>
+            <div class="sb-row blue">
+              <span class="sb-row__accent"></span>
+              <span class="sb-row__clubs"><span class="club otb" style="width:32px;height:32px;border-radius:6px;font-size:13.4px;">SV</span><span class="club mtk" style="width:32px;height:32px;border-radius:6px;font-size:13.4px;">MT</span></span>
+              <span class="sb-row__names">J. Bauhaus<br /><span class="b">O. Tjaden</span></span>
+              <span class="sb-row__right"><span class="sb-row__sets"><span class="sb-set">11</span><span class="sb-set won">21</span></span><span class="sb-row__big">0</span></span>
+            </div>
+            <div class="sb-divider"></div>
+            <div class="sb-row red">
+              <span class="sb-row__accent"></span>
+              <span class="sb-row__clubs"><span class="club tus" style="width:32px;height:32px;border-radius:6px;font-size:13.4px;">TU</span><span class="club vfl" style="width:32px;height:32px;border-radius:6px;font-size:13.4px;">VF</span></span>
+              <span class="sb-row__names">M. Dohrmann<br /><span class="b hot">P. Saßen</span></span>
+              <span class="sb-row__right"><span class="sb-row__sets"><span class="sb-set won">21</span><span class="sb-set">12</span></span><span class="sb-row__big hot">4</span></span>
+            </div>
+          </div>
+        </div></div>
+      </div>
+
+      <div class="showcase__split" id="download">
+        <div class="showcase__panel">
+          <div class="showcase__panel-kicker">Check-In &amp; Meldungen</div>
+          <div class="shot" data-h="360">
+            <div class="shot__scale"><div class="shot__inner" style="--design-w:500px;">
+              <div class="app-frame" style="height:360px;">
+                <nav class="rail" aria-hidden="true">
+                  <span class="app-mark" style="width:28px;height:28px;font-size:11.8px;">tnp<span class="dot">.</span></span>
+                  <span class="rail__back"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 6l-6 6 6 6"/></svg></span>
+                  <div class="rail__items">
+                    <span class="rail__btn"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3h7v7H3zM14 3h7v7h-7zM3 14h7v7H3zM14 14h7v7h-7z"/></svg></span>
+                    <span class="rail__btn"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l9 5-9 5-9-5 9-5zM3 13l9 5 9-5"/></svg></span>
+                    <span class="rail__btn"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12l9-9 9 9-9 9-9-9zM8 8h.01"/></svg></span>
+                    <span class="rail__btn is-active"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12l5 5L20 6"/></svg></span>
+                    <span class="rail__btn"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h7v7H4zM13 4h7v7h-7zM4 13h7v7H4zM13 13h7v7h-7z"/></svg></span>
+                    <span class="rail__btn"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h6v6M4 19h6v-6M10 8h5v8h5M10 16h5"/></svg></span>
+                    <span class="rail__btn"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 5h18v14H3zM12 5v14M3 12h18"/></svg></span>
+                    <span class="rail__btn"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11a3 3 0 100-6 3 3 0 000 6zM3 20a6 6 0 0112 0M17 11a3 3 0 100-6M15 20a6 6 0 016 0"/></svg></span>
+                    <span class="rail__btn"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M5 21V10M12 21V4M19 21v-7M3 21h18"/></svg></span>
+                  </div>
+                  <span class="rail__sun"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 8a4 4 0 100 8 4 4 0 000-8zM12 2v2M12 20v2M4 12H2M22 12h-2M5 5l1.5 1.5M17.5 17.5L19 19M19 5l-1.5 1.5M6.5 17.5L5 19"/></svg></span>
+                  <span class="rail__avatar">JM</span>
+                </nav>
+                <div class="app-frame__body">
+                  <div class="topbar">
+                    <div class="crumbs"><span class="c">Turniere</span><span class="sep">/</span><span class="c">Nordlicht-Cup</span><span class="sep">/</span><span class="c is-last">Check-In</span></div>
+                  </div>
+                  <div class="screen-head">
+                    <div><div class="screen-head__eyebrow">Setup</div><h3>Check-In</h3>
+                      <div class="screen-head__meta"><span class="m"><span style="width:6px;height:6px;border-radius:99px;background:#5fb87a;display:inline-block;"></span>Running</span></div>
+                    </div>
+                  </div>
+                  <div class="screen-body">
+                    <div class="tabs" style="margin-bottom:16px;"><span class="tab on">Anwesenheit</span><span class="tab">Bezahlung</span></div>
+                    <div class="checkin-stats">
+                      <span class="s"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="opacity:.7;"><path d="M9 11a3 3 0 100-6 3 3 0 000 6zM4 20a5 5 0 0110 0M17 11a3 3 0 100-6"/></svg>148 angemeldet</span>
+                      <span class="s ok"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12l5 5L20 6"/></svg>148 eingecheckt</span>
+                      <span class="s"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="opacity:.7;"><path d="M3 12l9-9 9 9-9 9z"/></svg>0 bezahlt</span>
+                    </div>
+                    <div class="checkin-search"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4-4"/></svg><span>Name, Verein oder Disziplin…</span></div>
+                    <div class="checkin-disc"><span class="on">Alle Disziplinen</span><span class="off">HD</span><span class="off">DD</span></div>
+                    <div class="checkin-table">
+                      <div class="checkin-table__head"><span>NAME</span><span>VEREIN</span></div>
+                      <div class="checkin-table__row"><span class="nm">Adrian Bähr</span><span><span class="club-tag">SC Marlow</span></span></div>
+                      <div class="checkin-table__row"><span class="nm">Aliyah Kortendieck</span><span><span class="club-tag">VfL Brakel</span></span></div>
+                      <div class="checkin-table__row"><span class="nm">Bennet Saßen</span><span><span class="club-tag">TuS Lindhorst</span></span></div>
+                      <div class="checkin-table__row"><span class="nm">Carlo Wendt</span><span><span class="club-tag">Ostsee TB</span></span></div>
+                      <div class="checkin-table__row"><span class="nm">Damian Reeker</span><span><span class="club-tag">TV Falkensee</span></span></div>
+                      <div class="checkin-table__row"><span class="nm">Elias Hagedorn</span><span><span class="club-tag">SC Marlow</span></span></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div></div>
+          </div>
+        </div>
+
+        <div class="showcase__copy">
+          <h3>Alles beginnt beim Check-In.</h3>
+          <p>Spieler und Meldungen per CSV importieren, am Turniertag abhaken, Zahlungen im Blick behalten — und dann auslosen.</p>
+          <ul class="bullets">
+            <li><span class="tick"><svg width="11" height="11" viewBox="0 0 12 12" fill="none" stroke="#fb923c" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M2.5 6.5l2.5 2.5 4.5-5"/></svg></span><span>CSV-Import für Spieler &amp; Meldungen</span></li>
+            <li><span class="tick"><svg width="11" height="11" viewBox="0 0 12 12" fill="none" stroke="#fb923c" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M2.5 6.5l2.5 2.5 4.5-5"/></svg></span><span>Anwesenheit &amp; Bezahlung pro Disziplin</span></li>
+            <li><span class="tick"><svg width="11" height="11" viewBox="0 0 12 12" fill="none" stroke="#fb923c" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M2.5 6.5l2.5 2.5 4.5-5"/></svg></span><span>Ein Datensatz für das ganze Turnier</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================== FINAL CTA ============================== -->
+  <section class="final">
+    <div class="container">
+      <div class="final__box on-dark">
+        <div class="final__court" aria-hidden="true">
+          <svg width="300" height="180" viewBox="0 0 300 180" fill="none" stroke="#f4eee4" stroke-width="2">
+            <rect x="8" y="8" width="284" height="164"/>
+            <line x1="22" y1="8" x2="22" y2="172"/><line x1="278" y1="8" x2="278" y2="172"/>
+            <line x1="116" y1="8" x2="116" y2="172"/><line x1="184" y1="8" x2="184" y2="172"/>
+            <line x1="8" y1="90" x2="116" y2="90"/><line x1="184" y1="90" x2="292" y2="90"/>
+            <line x1="150" y1="5" x2="150" y2="175" stroke="#fb923c" stroke-width="2.8" stroke-dasharray="3 3"/>
+          </svg>
+        </div>
+        <div class="final__inner">
+          <div>
+            <h2>Beim nächsten Vereinsturnier<br />leitest du, nicht die Tabelle.</h2>
+            <p>Lade tunap. herunter, importiere deine Meldungen und lose in Minuten aus. Kostenlos, lokal, ohne Konto.</p>
+          </div>
+          <div class="final__actions">
+            <a class="btn btn--accent btn--lg" href="#download">
+              <svg viewBox="0 0 15 15" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7.5 2v8M4 7l3.5 3.5L11 7M2.5 13h10"/></svg>
+              Für Windows herunterladen
+            </a>
+            <a class="btn btn--ghost btn--lg" href="https://github.com/Flolli32/tunap" rel="noopener">
+              <svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+              Quellcode auf GitHub
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- ============================== FOOTER ============================== -->
+<footer class="footer">
+  <div class="container footer__inner">
+    <span class="mark" style="width:24px;height:24px;font-size:14.8px;" aria-hidden="true">t<span>.</span></span>
+    <span class="wordmark" style="font-size:19px;">tunap<span class="dot">.</span></span>
+    <span class="footer__note">Läuft lokal. Keine Cloud. Kostenlos für Vereine.</span>
+    <nav class="footer__links" aria-label="Footer">
+      <a href="#funktionen">Funktionen</a>
+      <a href="#download">Download</a>
+      <a href="https://github.com/Flolli32/tunap" rel="noopener">GitHub</a>
+      <a href="mailto:hallo@tunap.app">Kontakt</a>
+    </nav>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
