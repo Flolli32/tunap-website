@@ -1,0 +1,42 @@
+name: Deploy to Strato (SFTP)
+
+# Läuft bei jedem Push auf main + manuell über den Actions-Tab.
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+# Verhindert, dass sich zwei Deploys überholen.
+concurrency:
+  group: deploy-strato
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Repo auschecken
+        uses: actions/checkout@v4
+
+      - name: Deploy-Bundle bauen (ganzes Repo außer .git/.github)
+        run: |
+          mkdir -p _site
+          rsync -a \
+            --exclude='.git' \
+            --exclude='.github' \
+            --exclude='_site' \
+            ./ _site/
+
+      - name: Per SFTP zu Strato hochladen
+        uses: wlixcc/SFTP-Deploy-Action@v1.2.5
+        with:
+          server: ${{ secrets.SFTP_SERVER }}
+          port: ${{ secrets.SFTP_PORT || '22' }}
+          username: ${{ secrets.SFTP_USERNAME }}
+          password: ${{ secrets.SFTP_PASSWORD }}
+          local_path: './_site/*'
+          remote_path: ${{ secrets.SFTP_REMOTE_DIR }}
+          sftp_only: true
+          # true = Spiegel (löscht entfernte Dateien, die lokal fehlen).
+          # false = nur hochladen/überschreiben, nichts löschen.
+          delete_remote_files: false

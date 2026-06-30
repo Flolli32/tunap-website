@@ -9,8 +9,10 @@ Ergebnisse). Umgesetzt aus dem Claude-Design-Prototyp als statische Website.
 - Reines HTML5 + CSS3, minimal JavaScript — kein Framework, kein Build-Step.
 - Modernes CSS: Flexbox/Grid, CSS-Variablen für Farben & Spacing.
 - Schriftart: [Inter Tight](https://fonts.google.com/specimen/Inter+Tight) via Google Fonts.
-- Die App-Screen-Previews sind in HTML/CSS nachgebaut (vektorbasiert, kein Bild)
-  und werden per `script.js` proportionsgetreu auf die jeweilige Spaltenbreite skaliert.
+- Die App-Screen-Previews sind echte Screenshots (`assets/screen-*.png`, 16:9)
+  und werden per CSS proportionsgetreu (`aspect-ratio`, `object-fit`) skaliert.
+- Die interaktive Live-Demo (Court-Monitor + Schiedsrichter-Tablet) ist in
+  `script.js` als Vanilla-Komponente umgesetzt — inkl. BWF-Aufschlaglogik.
 
 ## Struktur
 
