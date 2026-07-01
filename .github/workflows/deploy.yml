@@ -31,9 +31,12 @@ jobs:
         uses: wlixcc/SFTP-Deploy-Action@v1.2.5
         with:
           server: ${{ secrets.SFTP_SERVER }}
-          port: ${{ secrets.SFTP_PORT || '22' }}
+          port: 22
           username: ${{ secrets.SFTP_USERNAME }}
           password: ${{ secrets.SFTP_PASSWORD }}
+          # Strato nutzt Passwort-Auth; die Action verlangt den Input aber
+          # formal — leer lassen erzwingt den Passwort-Pfad.
+          ssh_private_key: ""
           local_path: './_site/*'
           remote_path: ${{ secrets.SFTP_REMOTE_DIR }}
           sftp_only: true
