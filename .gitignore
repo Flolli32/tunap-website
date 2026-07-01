@@ -1,0 +1,12 @@
+# Lokales Claude-Code-Tooling (Skills, Einstellungen) — nicht deployen
+.claude/
+
+# Abhängigkeiten
+node_modules/
+
+# Deploy-Bundle (wird im CI gebaut)
+_site/
+
+# OS / Editor
+.DS_Store
+Thumbs.db
