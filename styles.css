@@ -167,7 +167,7 @@ img{max-width:100%;}
   -webkit-mask-image:radial-gradient(80% 60% at 50% 0%, #000 0%, transparent 72%);
           mask-image:radial-gradient(80% 60% at 50% 0%, #000 0%, transparent 72%);
 }
-.hero__inner{position:relative;max-width:1180px;margin:0 auto;padding:72px 40px 0;text-align:center;}
+.hero__inner{position:relative;max-width:1180px;margin:0 auto;padding:72px 40px 76px;text-align:center;}
 .pill{display:inline-flex;align-items:center;gap:8px;padding:7px 15px;border-radius:var(--r-pill);font-size:12.5px;font-weight:700;letter-spacing:0.02em;}
 .pill--accent{background:var(--surface);color:var(--accent-text);border:1px solid var(--ink-10);box-shadow:var(--sh-sm);}
 .pill--accent .dot{width:7px;height:7px;}
