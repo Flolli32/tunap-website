@@ -43,3 +43,17 @@ jobs:
           # true = Spiegel (löscht entfernte Dateien, die lokal fehlen).
           # false = nur hochladen/überschreiben, nichts löschen.
           delete_remote_files: false
+
+      # Der Glob `_site/*` überspringt Dotfiles — .htaccess deshalb separat.
+      - name: .htaccess hochladen
+        uses: wlixcc/SFTP-Deploy-Action@v1.2.5
+        with:
+          server: ${{ secrets.SFTP_SERVER }}
+          port: 22
+          username: ${{ secrets.SFTP_USERNAME }}
+          password: ${{ secrets.SFTP_PASSWORD }}
+          ssh_private_key: ""
+          local_path: './_site/.htaccess'
+          remote_path: ${{ secrets.SFTP_REMOTE_DIR }}
+          sftp_only: true
+          delete_remote_files: false
