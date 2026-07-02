@@ -289,7 +289,8 @@ img{max-width:100%;}
 .modi-inner .h2{margin:12px auto 0;max-width:680px;}
 .modi-inner .lead{margin:14px auto 0;max-width:600px;}
 .modi{margin-top:36px;display:grid;grid-template-columns:1fr;gap:16px;text-align:left;}
-.modi__card{background:var(--surface);border:1px solid var(--ink-07);border-radius:var(--r);padding:24px;box-shadow:var(--sh-sm);transition:transform .18s ease,box-shadow .18s ease,border-color .18s ease;}
+.modi__card{position:relative;background:var(--surface);border:1px solid var(--ink-07);border-radius:var(--r);padding:24px;box-shadow:var(--sh-sm);transition:transform .18s ease,box-shadow .18s ease,border-color .18s ease;}
+.modi__badge{position:absolute;top:16px;right:16px;font-size:10.5px;font-weight:800;letter-spacing:0.08em;text-transform:uppercase;color:var(--accent-text);background:var(--accent-08);border:1px solid rgba(249,115,22,0.35);padding:3px 9px;border-radius:var(--r-pill);}
 .modi__card:hover{transform:translateY(-3px);box-shadow:var(--sh-md);border-color:var(--ink-10);}
 .modi__ic{width:38px;height:38px;border-radius:10px;background:var(--ink);color:var(--accent);display:flex;align-items:center;justify-content:center;margin-bottom:14px;}
 .modi__t{font-size:16.5px;font-weight:700;letter-spacing:-0.01em;color:var(--ink);}
@@ -364,6 +365,29 @@ img{max-width:100%;}
 .perk__t{font-size:15.5px;font-weight:700;letter-spacing:-0.01em;color:var(--ink);}
 .perk__p{margin:5px 0 0;font-size:14px;line-height:1.55;color:var(--ink-62);}
 @media (min-width:880px){.pilot-inner{grid-template-columns:1.1fr 1fr;gap:64px;}}
+
+/* ============================================================
+   ROADMAP
+   ============================================================ */
+.roadmap-wrap{
+  background:
+    radial-gradient(46% 60% at 88% 0%, rgba(249,115,22,0.14), transparent 68%),
+    radial-gradient(40% 50% at 6% 100%, rgba(37,99,235,0.12), transparent 70%),
+    linear-gradient(165deg,#0e1524 0%,#141d30 100%);
+  color:var(--cream);border-top:1px solid var(--cream-06);scroll-margin-top:70px;
+}
+.roadmap-inner{max-width:1120px;margin:0 auto;padding:84px 40px;}
+.roadmap-head{text-align:center;max-width:640px;margin:0 auto 44px;}
+.roadmap-head .h2{margin-top:14px;}
+.roadmap-head .lead{margin:14px auto 0;max-width:560px;}
+.roadmap{display:grid;grid-template-columns:1fr;gap:16px;}
+.rmap{position:relative;background:var(--cream-06);border:1px solid var(--cream-10);border-radius:var(--r);padding:26px;transition:transform .18s ease,border-color .18s ease,background-color .18s ease;}
+.rmap:hover{transform:translateY(-3px);border-color:rgba(249,115,22,0.4);background:rgba(238,241,246,0.09);}
+.rmap__badge{position:absolute;top:18px;right:18px;font-size:10.5px;font-weight:800;letter-spacing:0.08em;text-transform:uppercase;color:var(--accent);background:rgba(249,115,22,0.12);border:1px solid rgba(249,115,22,0.4);padding:3px 9px;border-radius:var(--r-pill);}
+.rmap__ic{width:40px;height:40px;border-radius:11px;background:var(--accent);color:var(--white);display:flex;align-items:center;justify-content:center;margin-bottom:15px;box-shadow:0 8px 18px -8px rgba(249,115,22,0.7);}
+.rmap__t{font-size:16.5px;font-weight:700;letter-spacing:-0.01em;color:var(--cream);padding-right:64px;}
+.rmap__p{margin:7px 0 0;font-size:14px;line-height:1.55;color:var(--cream-72);}
+@media (min-width:860px){.roadmap{grid-template-columns:repeat(3,1fr);}}
 
 /* ============================================================
    FAQ
@@ -484,7 +508,7 @@ img{max-width:100%;}
 @media (max-width:600px){
   .nav{padding:12px 20px;gap:14px;}
   .hero__inner{padding:48px 20px 0;}
-  .pillars,.flow-wrap,.modi-inner,.livedemo-inner,.featgrid-inner,.pricing-inner,.contact__inner,.footer__inner,.legal{padding-left:20px;padding-right:20px;}
+  .pillars,.flow-wrap,.modi-inner,.livedemo-inner,.featgrid-inner,.roadmap-inner,.pricing-inner,.contact__inner,.footer__inner,.legal{padding-left:20px;padding-right:20px;}
   .hero__shot{margin-top:44px;}
   .footer__inner{flex-direction:column;align-items:flex-start;}
 }
