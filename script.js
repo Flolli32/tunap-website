@@ -9,6 +9,23 @@
 (function () {
   'use strict';
 
+  /* ---------- 0) Burger-Menü (mobil) ---------- */
+  function initBurger() {
+    var nav = document.getElementById('nav');
+    var btn = document.getElementById('nav-burger');
+    var links = document.getElementById('nav-links');
+    if (!nav || !btn || !links) return;
+    function set(open) {
+      nav.classList.toggle('is-open', open);
+      btn.setAttribute('aria-expanded', String(open));
+      btn.setAttribute('aria-label', open ? 'Menü schließen' : 'Menü öffnen');
+    }
+    btn.addEventListener('click', function () { set(!nav.classList.contains('is-open')); });
+    links.addEventListener('click', function (e) {
+      if (e.target.closest('a')) set(false);   /* nach Sprung zum Anker schließen */
+    });
+  }
+
   /* ---------- 1) Preis-Toggle ---------- */
   function initPricing() {
     var once = document.getElementById('price-once');
@@ -525,7 +542,7 @@
     new LiveDemo(mon, tab, document.getElementById('tn-doubles'), document.getElementById('tn-singles'));
   }
 
-  function init() { initPricing(); initReveal(); initDemo(); }
+  function init() { initBurger(); initPricing(); initReveal(); initDemo(); }
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init);
   else init();
 })();

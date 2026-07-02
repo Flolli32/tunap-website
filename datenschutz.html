@@ -14,15 +14,19 @@
 <body>
 
   <!-- ===== NAV ===== -->
-  <nav class="nav">
+  <nav class="nav" id="nav">
     <a href="index.html" class="wordmark wordmark--nav">tunap<span class="wordmark__dot"></span></a>
-    <div class="nav__links">
+    <div class="nav__links" id="nav-links">
       <a href="index.html#funktionen">Funktionen</a>
       <a href="index.html#live-demo">Live-Demo</a>
+      <a href="index.html#faq">FAQ</a>
       <a href="index.html#kontakt">Kontakt</a>
     </div>
     <div class="nav__spacer"></div>
     <a href="mailto:info@tunap-software.de?subject=Demo-Version%20anfragen" class="btn btn--dark btn--nav">Demo anfragen</a>
+    <button type="button" class="nav__burger" id="nav-burger" aria-label="Menü öffnen" aria-expanded="false" aria-controls="nav-links">
+      <span></span><span></span><span></span>
+    </button>
   </nav>
 
   <main class="legal">
@@ -98,5 +102,6 @@
     </div>
   </footer>
 
+  <script src="script.js"></script>
 </body>
 </html>

@@ -7,15 +7,42 @@
 <meta name="description" content="tunap leitet dein Badminton-Turnier von Auslosung bis Siegerehrung: offline-fähig, echtzeit-synchron auf Tablet, Monitor und Zuschauer-Handy, BWF-konform. Kostenlose Demo-Version verfügbar.">
 <meta name="theme-color" content="#0e1524">
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="canonical" href="https://tunap-software.de/">
 
 <!-- Open Graph / Social -->
 <meta property="og:type" content="website">
+<meta property="og:url" content="https://tunap-software.de/">
+<meta property="og:site_name" content="tunap">
+<meta property="og:locale" content="de_DE">
 <meta property="og:title" content="tunap. — Badminton-Turniersoftware mit Live-Anzeigen">
 <meta property="og:description" content="Die Badminton-Turniersoftware, die dein Turnier live anzeigt. Tippen am Tablet, live auf dem Monitor. Kostenlose Demo-Version.">
-<meta property="og:image" content="assets/og_image.svg">
+<meta property="og:image" content="https://tunap-software.de/assets/og_image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="tunap. — Badminton-Turniersoftware mit Live-Anzeigen">
 <meta name="twitter:description" content="Tippen am Tablet, live auf dem Monitor. Kostenlose Demo-Version verfügbar.">
+<meta name="twitter:image" content="https://tunap-software.de/assets/og_image.png">
+
+<!-- Strukturierte Daten -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "tunap",
+  "operatingSystem": "Windows",
+  "applicationCategory": "SportsApplication",
+  "description": "Badminton-Turniersoftware mit Live-Anzeigen: offline-fähig, echtzeit-synchron auf Tablet, Monitor und Zuschauer-Handy, BWF-konform.",
+  "url": "https://tunap-software.de/",
+  "inLanguage": "de",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "EUR",
+    "description": "Kostenlose Demo-Version mit allen Grundfunktionen"
+  }
+}
+</script>
 
 <link rel="preload" href="assets/fonts/InterTight-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="styles.css">
@@ -23,16 +50,20 @@
 <body>
 
   <!-- ===== NAV ===== -->
-  <nav class="nav">
+  <nav class="nav" id="nav">
     <a href="#top" class="wordmark wordmark--nav">tunap<span class="wordmark__dot"></span></a>
-    <div class="nav__links">
+    <div class="nav__links" id="nav-links">
       <a href="#funktionen">Funktionen</a>
       <a href="#live-demo">Live-Demo</a>
       <!-- Preise vorerst ausgeblendet: <a href="#preise">Preise</a> -->
+      <a href="#faq">FAQ</a>
       <a href="#kontakt">Kontakt</a>
     </div>
     <div class="nav__spacer"></div>
     <a href="mailto:info@tunap-software.de?subject=Demo-Version%20anfragen" class="btn btn--dark btn--nav">Demo anfragen</a>
+    <button type="button" class="nav__burger" id="nav-burger" aria-label="Menü öffnen" aria-expanded="false" aria-controls="nav-links">
+      <span></span><span></span><span></span>
+    </button>
   </nav>
 
   <!-- ===== HERO ===== -->
@@ -61,7 +92,7 @@
 
       <div class="hero__shot winframe reveal">
         <div class="winbar"><span class="winbar__dots"><i></i><i></i><i></i></span><span class="winbar__title">tunap — Turnier-Dashboard</span></div>
-        <img class="shot-img" src="assets/screen_dashboard.png" alt="tunap Dashboard — Live-Felder, Warteschlange und letzte Ergebnisse" width="4800" height="2492" loading="eager">
+        <img class="shot-img" src="assets/screen_dashboard.webp" alt="tunap Dashboard — Live-Felder, Warteschlange und letzte Ergebnisse" width="2400" height="1350" loading="eager">
       </div>
     </div>
   </header>
@@ -103,7 +134,7 @@
       <article class="flowrow reveal">
         <div class="flowrow__shot winframe">
           <div class="winbar"><span class="winbar__dots"><i></i><i></i><i></i></span></div>
-          <img class="shot-img" src="assets/screen_schedule.png" alt="tunap Spielplan — Matches mit Status, Feldern und Ergebnissen" width="3200" height="1800" loading="lazy">
+          <img class="shot-img" src="assets/screen_schedule.webp" alt="tunap Spielplan — Matches mit Status, Feldern und Ergebnissen" width="2400" height="1350" loading="lazy">
         </div>
         <div class="flowrow__meta">
           <div class="flowrow__kicker">Spielplan</div>
@@ -120,7 +151,7 @@
       <article class="flowrow flowrow--flip reveal">
         <div class="flowrow__shot winframe">
           <div class="winbar"><span class="winbar__dots"><i></i><i></i><i></i></span></div>
-          <img class="shot-img" src="assets/screen_checkin.png" alt="tunap Check-in — Anwesenheit und Bezahlung je Spieler" width="3200" height="1800" loading="lazy">
+          <img class="shot-img" src="assets/screen_checkin.webp" alt="tunap Check-in — Anwesenheit und Bezahlung je Spieler" width="2400" height="1350" loading="lazy">
         </div>
         <div class="flowrow__meta">
           <div class="flowrow__kicker">Check-in</div>
@@ -137,7 +168,7 @@
       <article class="flowrow reveal">
         <div class="flowrow__shot winframe">
           <div class="winbar"><span class="winbar__dots"><i></i><i></i><i></i></span></div>
-          <img class="shot-img" src="assets/screen_connection.png" alt="tunap Verbindungen — Links und QR-Codes für Tablets, Monitore und Zuschauer" width="3200" height="1800" loading="lazy">
+          <img class="shot-img" src="assets/screen_connection.webp" alt="tunap Verbindungen — Links und QR-Codes für Tablets, Monitore und Zuschauer" width="2400" height="1350" loading="lazy">
         </div>
         <div class="flowrow__meta">
           <div class="flowrow__kicker">Live-Anzeigen</div>
@@ -154,7 +185,7 @@
       <article class="flowrow flowrow--flip reveal">
         <div class="flowrow__shot winframe">
           <div class="winbar"><span class="winbar__dots"><i></i><i></i><i></i></span></div>
-          <img class="shot-img" src="assets/screen_statistics.png" alt="tunap Statistiken — Auswertung je Spieler, Verein und Disziplin" width="3200" height="1800" loading="lazy">
+          <img class="shot-img" src="assets/screen_statistics.webp" alt="tunap Statistiken — Auswertung je Spieler, Verein und Disziplin" width="2400" height="1350" loading="lazy">
         </div>
         <div class="flowrow__meta">
           <div class="flowrow__kicker">Statistik</div>
@@ -278,12 +309,78 @@
     </div>
   </section>
 
+  <!-- ===== PILOTVEREINE ===== -->
+  <section id="pilot" class="pilot-wrap">
+    <div class="pilot-inner">
+      <div class="pilot__text">
+        <div class="eyebrow">05 · Pilotvereine</div>
+        <h2 class="h2">Dein Verein kann tunap mitgestalten.</h2>
+        <p class="lead">tunap entsteht gerade — und wird mit echten Turnieren entwickelt, nicht am Schreibtisch. Als Pilotverein testest du die Software bei deinem nächsten Vereinsturnier und bestimmst mit, welche Funktionen als Nächstes kommen.</p>
+        <a href="mailto:info@tunap-software.de?subject=Pilotverein%20werden" class="btn btn--accent">Pilotverein werden</a>
+      </div>
+      <div class="pilot__perks">
+        <div class="perk reveal">
+          <div class="perk__t">Kostenlos testen</div>
+          <p class="perk__p">Volle Demo-Version für dein Turnier — ohne Kosten, ohne Verpflichtung.</p>
+        </div>
+        <div class="perk reveal">
+          <div class="perk__t">Direkter Draht</div>
+          <p class="perk__p">Feedback landet direkt beim Entwickler — Wünsche fließen in die nächste Version ein.</p>
+        </div>
+        <div class="perk reveal">
+          <div class="perk__t">Frühtester-Rabatt</div>
+          <p class="perk__p">Pilotvereine bekommen die Vollversion beim Release dauerhaft günstiger.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FAQ ===== -->
+  <section id="faq" class="faq-wrap">
+    <div class="faq-inner">
+      <div class="faq-head">
+        <div class="eyebrow">06 · FAQ</div>
+        <h2 class="h2">Häufige Fragen.</h2>
+      </div>
+      <div class="faq">
+        <details class="faq__item">
+          <summary class="faq__q">Welche Systemvoraussetzungen hat tunap?</summary>
+          <div class="faq__a"><p>tunap läuft auf einem normalen Windows-Rechner (Windows 10 oder 11). Tablets, Monitore und Zuschauer-Handys brauchen nur einen Browser — keine Installation, kein bestimmtes Betriebssystem.</p></div>
+        </details>
+        <details class="faq__item">
+          <summary class="faq__q">Brauche ich Internet in der Halle?</summary>
+          <div class="faq__a"><p>Nein. tunap läuft komplett im lokalen Netzwerk — ein WLAN-Router in der Halle genügt, eine Internetverbindung ist nicht nötig. Damit gibt es auch kein Ausfallrisiko durch schlechtes Hallen-Internet.</p></div>
+        </details>
+        <details class="faq__item">
+          <summary class="faq__q">Wie viele Felder und Geräte kann ich anschließen?</summary>
+          <div class="faq__a"><p>Beliebig viele. Jedes Feld bekommt per QR-Code sein Schiedsrichter-Tablet und seinen Court-Monitor; dazu kommen Hallen-Monitore und die Zuschauer-Ansicht für jedes Handy im Netz.</p></div>
+        </details>
+        <details class="faq__item">
+          <summary class="faq__q">Was kann die kostenlose Demo-Version?</summary>
+          <div class="faq__a"><p>Alle Grundfunktionen — Auslosung, Spielplan, Live-Scoring, Anzeigen. Sie ist lediglich in der Turniergröße limitiert. Zum Ausprobieren und für kleine Vereinsabende reicht sie völlig.</p></div>
+        </details>
+        <details class="faq__item">
+          <summary class="faq__q">Zählt tunap nach offiziellen BWF-Regeln?</summary>
+          <div class="faq__a"><p>Ja. Aufschlagwechsel, Seitenwechsel, Satzgewinn (21 Punkte, 2 Punkte Abstand, Verlängerung bis 30) — die komplette Zähllogik folgt dem BWF-Regelwerk, für Einzel und Doppel.</p></div>
+        </details>
+        <details class="faq__item">
+          <summary class="faq__q">Was kostet die Vollversion?</summary>
+          <div class="faq__a"><p>tunap ist noch in Entwicklung, die endgültigen Preise stehen noch nicht fest. Geplant sind Stufen nach Turniergröße — als Einmalkauf pro Turnier oder im Abo. Frühtester und Pilotvereine bekommen die Vollversion beim Release günstiger. <a href="mailto:info@tunap-software.de?subject=Preise">Einfach anfragen.</a></p></div>
+        </details>
+        <details class="faq__item">
+          <summary class="faq__q">Sind meine Turnierdaten sicher?</summary>
+          <div class="faq__a"><p>Ja. Alle Daten bleiben lokal auf deinem Rechner — nichts liegt in einer Cloud. tunap legt automatisch lokale Backups an, damit ein Absturz mitten im Turnier kein Drama ist.</p></div>
+        </details>
+      </div>
+    </div>
+  </section>
+
   <!-- ===== PREISE (vorerst ausgeblendet — zum Aktivieren `hidden` entfernen
-       und Nav-/Footer-Links wieder einkommentieren; Kontakt-Eyebrow dann zurück auf 06) ===== -->
+       und Nav-/Footer-Links wieder einkommentieren) ===== -->
   <section id="preise" class="pricing-wrap" hidden>
     <div class="pricing-inner">
       <div class="pricing-head">
-        <div class="eyebrow">05 · Preise</div>
+        <div class="eyebrow">07 · Preise</div>
         <h2 class="h2">Für ein Turnier oder die ganze Saison.</h2>
         <p class="lead lead--center">Jede Stufe gibt es als Einmalkauf für ein einzelnes Turnier — oder als Abo für alle Turniere deiner Saison.</p>
         <div class="pricing-toggle" role="group" aria-label="Abrechnungsart">
@@ -349,7 +446,7 @@
   <section id="kontakt" class="contact">
     <div aria-hidden="true" class="contact__glow"></div>
     <div class="contact__inner">
-      <div class="eyebrow eyebrow--accent"><span class="dot dot--pulse"></span>05 · Kontakt</div>
+      <div class="eyebrow eyebrow--accent"><span class="dot dot--pulse"></span>08 · Kontakt</div>
       <h2 class="h2 h2--light">Überzeug dich selbst —<br>hol dir die kostenlose Demo.</h2>
       <p class="lead lead--light">Schreib uns eine kurze E-Mail und du bekommst die Demo-Version mit allen Grundfunktionen. Fragen zu Preisen, Funktionen oder deinem Turnier? Auch dafür sind wir da.</p>
       <div class="contact__cta">
