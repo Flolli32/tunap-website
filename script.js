@@ -1,29 +1,50 @@
 /* ============================================================
    tunap. — Landingpage Skript
-   1) Sprachumschalter DE/EN
-   2) Interaktive Live-Demo (Court-Monitor + Schiedsrichter-Tablet)
+   1) Preis-Toggle (pro Turnier / Jahres-Abo)
+   2) Scroll-Reveal (sanftes Einblenden der Sektionen)
+   3) Interaktive Live-Demo (Court-Monitor + Schiedsrichter-Tablet)
       — Vanilla-Portierung der ursprünglichen DCLogic/React-Komponente,
         inkl. BWF-konformer Aufschlag-/Seitenwechsel-/Satzlogik.
    ============================================================ */
 (function () {
   'use strict';
 
-  /* ---------- 1) Sprachumschalter ---------- */
-  function initLang() {
-    var de = document.getElementById('lang-de');
-    var en = document.getElementById('lang-en');
-    if (!de || !en) return;
-    function set(lang) {
-      document.body.setAttribute('data-lang', lang);
-      document.documentElement.lang = lang;
-      var deOn = lang === 'de';
-      de.classList.toggle('is-active', deOn);
-      en.classList.toggle('is-active', !deOn);
-      de.setAttribute('aria-pressed', String(deOn));
-      en.setAttribute('aria-pressed', String(!deOn));
+  /* ---------- 1) Preis-Toggle ---------- */
+  function initPricing() {
+    var once = document.getElementById('price-once');
+    var abo = document.getElementById('price-abo');
+    if (!once || !abo) return;
+    function set(mode) {
+      var isOnce = mode === 'once';
+      once.classList.toggle('is-active', isOnce);
+      abo.classList.toggle('is-active', !isOnce);
+      once.setAttribute('aria-pressed', String(isOnce));
+      abo.setAttribute('aria-pressed', String(!isOnce));
+      var els = document.querySelectorAll('[data-once][data-abo]');
+      for (var i = 0; i < els.length; i++) {
+        els[i].innerHTML = els[i].getAttribute(isOnce ? 'data-once' : 'data-abo');
+      }
+      var plans = document.querySelector('.plans');
+      if (plans) plans.setAttribute('data-billing', mode);
     }
-    de.addEventListener('click', function () { set('de'); });
-    en.addEventListener('click', function () { set('en'); });
+    once.addEventListener('click', function () { set('once'); });
+    abo.addEventListener('click', function () { set('abo'); });
+  }
+
+  /* ---------- 2) Scroll-Reveal ---------- */
+  function initReveal() {
+    var els = document.querySelectorAll('.reveal');
+    if (!els.length) return;
+    if (!('IntersectionObserver' in window)) {
+      for (var i = 0; i < els.length; i++) els[i].classList.add('is-visible');
+      return;
+    }
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        if (e.isIntersecting) { e.target.classList.add('is-visible'); io.unobserve(e.target); }
+      });
+    }, { rootMargin: '0px 0px -8% 0px', threshold: 0.08 });
+    for (var j = 0; j < els.length; j++) io.observe(els[j]);
   }
 
   /* ---------- Mini-Hyperscript (React.createElement-Ersatz) ---------- */
@@ -62,7 +83,7 @@
     return el;
   }
 
-  /* ---------- 2) Live-Demo ---------- */
+  /* ---------- 3) Live-Demo ---------- */
   function LiveDemo(monitorMount, tabletMount, doublesBtn, singlesBtn) {
     this.monitorMount = monitorMount;
     this.tabletMount = tabletMount;
@@ -504,7 +525,7 @@
     new LiveDemo(mon, tab, document.getElementById('tn-doubles'), document.getElementById('tn-singles'));
   }
 
-  function init() { initLang(); initDemo(); }
+  function init() { initPricing(); initReveal(); initDemo(); }
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init);
   else init();
 })();

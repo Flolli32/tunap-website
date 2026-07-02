@@ -2,25 +2,28 @@
 
 Marketing-Landingpage für **tunap.** — die Windows-App zur Leitung von
 Badminton-Vereinsturnieren (Auslosung, Spielplan, Live-Scoring nach BWF-Regeln,
-Ergebnisse). Umgesetzt aus dem Claude-Design-Prototyp als statische Website.
+Ergebnisse). Ziel der Seite: Produkt vorstellen, Features zeigen, potentielle
+Kunden überzeugen (Demo-Anfrage per E-Mail an info@tunap-software.de).
 
 ## Technik
 
 - Reines HTML5 + CSS3, minimal JavaScript — kein Framework, kein Build-Step.
 - Modernes CSS: Flexbox/Grid, CSS-Variablen für Farben & Spacing.
 - Schriftart: [Inter Tight](https://fonts.google.com/specimen/Inter+Tight) via Google Fonts.
-- Die App-Screen-Previews sind echte Screenshots (`assets/screen-*.png`, 16:9)
+- Die App-Screen-Previews sind echte Screenshots (`assets/screen_*.png`, 16:9)
   und werden per CSS proportionsgetreu (`aspect-ratio`, `object-fit`) skaliert.
 - Die interaktive Live-Demo (Court-Monitor + Schiedsrichter-Tablet) ist in
   `script.js` als Vanilla-Komponente umgesetzt — inkl. BWF-Aufschlaglogik.
+- Preis-Sektion mit Toggle (Einmalkauf pro Turnier / Jahres-Abo) — Beträge
+  stehen als `data-once`/`data-abo`-Attribute in `index.html`.
 
 ## Struktur
 
 ```
-index.html      — gesamte Landingpage (semantisches Markup + Screen-Previews)
+index.html      — gesamte Landingpage (Hero, Funktionen, Modi, Live-Demo, Preise, Kontakt)
 styles.css      — Design-Tokens, Layout, Komponenten, Responsive
-script.js       — Auto-Skalierung der Screen-Previews
-assets/         — Favicons, Wordmarks (SVG), og-image.png (Social-Preview)
+script.js       — Preis-Toggle, Scroll-Reveal, Live-Demo
+assets/         — Favicons, Wordmarks (SVG), Screenshots, og_image.svg
 ```
 
 ## Lokal starten
@@ -52,5 +55,7 @@ Danach im Browser **http://localhost:8000** öffnen.
 ## Anpassen
 
 - **Farben & Spacing:** CSS-Variablen im `:root`-Block von `styles.css`.
-- **Download-/GitHub-Links:** in `index.html` sind die CTAs auf `#download`
-  bzw. das GitHub-Repo verlinkt — vor dem Go-Live durch echte Ziele ersetzen.
+- **Preise:** Beträge in `index.html` bei den `.plan`-Karten anpassen
+  (`data-once` = Einmalkauf pro Turnier, `data-abo` = Jahres-Abo; der sichtbare
+  Startwert im Element sollte `data-once` entsprechen).
+- **Kontakt:** alle CTAs verlinken per `mailto:` auf info@tunap-software.de.
