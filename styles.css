@@ -272,7 +272,21 @@ img{max-width:100%;}
 .livedemo__col{flex:1 1 360px;min-width:0;display:flex;flex-direction:column;}
 .livedemo__label{display:flex;align-items:center;gap:9px;font-size:11px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:var(--accent-deep);margin-bottom:12px;}
 .livedemo__label .dot{width:7px;height:7px;}
-.livedemo__screen{aspect-ratio:8/5;container-type:size;background:#0a0d14;border-radius:16px;overflow:hidden;border:1px solid var(--cream-10);box-shadow:var(--sh-lg);}
+.livedemo__screen{aspect-ratio:8/5;container-type:size;background:#0a0d14;border-radius:8px;overflow:hidden;}
+
+/* ---- Geräte-Gehäuse (TV + Tablet) ---- */
+.device{display:flex;flex-direction:column;align-items:center;width:100%;}
+
+/* Court-Monitor als Fernseher mit Standfuß */
+.device--tv .device__frame{width:100%;padding:13px;border-radius:16px;background:linear-gradient(180deg,#222a3a 0%,#0f141d 100%);box-shadow:var(--sh-lg),inset 0 0 0 1px rgba(255,255,255,0.06);}
+.device--tv .livedemo__screen{border-radius:5px;box-shadow:inset 0 0 0 1px rgba(0,0,0,0.7);}
+.device__neck{width:52px;height:20px;background:linear-gradient(180deg,#1b2130 0%,#141a25 100%);}
+.device__base{width:190px;max-width:62%;height:13px;border-radius:0 0 12px 12px;background:linear-gradient(180deg,#222a3a 0%,#10151e 100%);box-shadow:0 10px 18px -10px rgba(10,13,20,0.6);}
+
+/* Schiedsrichter-Tablet */
+.device--tablet{position:relative;padding:20px;border-radius:30px;background:linear-gradient(155deg,#242c3c 0%,#111722 100%);box-shadow:var(--sh-lg),inset 0 0 0 1px rgba(255,255,255,0.06);}
+.device--tablet .livedemo__screen{width:100%;border-radius:12px;box-shadow:inset 0 0 0 1px rgba(0,0,0,0.7);}
+.device__cam{position:absolute;top:9px;left:50%;transform:translateX(-50%);width:6px;height:6px;border-radius:50%;background:#394252;box-shadow:inset 0 0 0 1px rgba(255,255,255,0.1);}
 .livedemo__controls{display:flex;align-items:center;justify-content:flex-end;flex-wrap:wrap;gap:8px;margin-top:20px;}
 .livedemo__btn{flex:0 0 auto;font-size:13px;font-weight:600;padding:9px 18px;min-height:40px;border-radius:10px;border:1px solid var(--ink-14);background:var(--surface);color:var(--ink-62);cursor:pointer;font-family:inherit;transition:all .15s ease;}
 .livedemo__btn:hover{border-color:var(--ink);color:var(--ink);}
